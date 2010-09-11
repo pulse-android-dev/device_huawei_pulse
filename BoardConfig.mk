@@ -70,3 +70,9 @@ BOARD_KERNEL_BASE := 0x10000000
 TARGET_PROVIDES_INIT_RC := true
 
 #BUILD_WITHOUT_PV := true
+
+BUSYBOX_CONFIG := full
+CYANOGEN_BIONIC := true    #Needed for BusyBox to compile. We don't actually use Cyanogen's Bionic
+
+ADDITIONAL_DEFAULT_PROPERTIES += ro.secure=0
+
