@@ -38,7 +38,6 @@ PRODUCT_PROPERTY_OVERRIDES := \
 PRODUCT_COPY_FILES := \
      device/huawei/pulse/include/lib/hw/sensors.default.so:system/lib/hw/sensors.default.so \
      device/huawei/pulse/include/etc/dhcpcd/dhcpcd.conf:system/etc/dhcpcd/dhcpcd.conf \
-     device/huawei/pulse/include/etc/resolv.conf:system/etc/resolv.conf \
      device/huawei/pulse/include/etc/gps.conf:system/etc/gps.conf \
      device/huawei/pulse/include/etc/AudioFilter.csv:system/etc/AudioFilter.csv \
      device/huawei/pulse/include/etc/wifi/wpa_supplicant.conf:system/etc/wifi/wpa_supplicant.conf \
