@@ -32,7 +32,7 @@ TARGET_CPU_ABI := armeabi
 TARGET_ARCH_VARIANT := armv5te
 
 # Wifi related defines
-BOARD_WPA_SUPPLICANT_DRIVER := WEXT
+BOARD_WPA_SUPPLICANT_DRIVER := AWEXT
 #BOARD_WPA_SUPPLICANT_PRIVATE_LIB := libWifiApi
 BOARD_WLAN_TI_STA_DK_ROOT   := system/wlan/ti/sta_dk_4_0_4_32
 WIFI_DRIVER_MODULE_PATH     := "/system/wifi/ar6000.ko"

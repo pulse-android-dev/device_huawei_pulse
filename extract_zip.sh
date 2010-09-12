@@ -1,7 +1,6 @@
 # !/bin/bash
 
 if [ "$1" != "" ]; then
-echo `dirname $0`
 loc=`dirname $0`
 echo Zip file = $1
 echo Source location = $loc

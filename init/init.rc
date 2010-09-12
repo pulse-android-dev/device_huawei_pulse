@@ -441,15 +441,9 @@ service pbap /system/bin/sdptool add --channel=19 PBAP
 #From Huawei init
 # modify for wifi baseline
 # HUAWEI WPA SETTING
-service wpa_supplicant /system/bin/wpa_supplicant -Dwext -ieth0 -W -c/data/misc/wifi/wpa_supplicant.conf
+service wpa_supplicant /system/bin/wpa_supplicant -Dawext -ieth0 -W -c/data/misc/wifi/wpa_supplicant.conf
     disabled
     oneshot
-
-#/*BU5D05981 for broadcom,WIFI Module,hanshirong 66539,20100325 begin++*/
-service bcm_supplicant /system/bin/bcm_supplicant -Dwext -ieth0 -W -c/data/misc/wifi/wpa_supplicant.conf
-    disabled
-    oneshot
-#/*BU5D05981 for broadcom,WIFI Module,hanshirong 66539,20100325 end--*/
 
 service dhcpcd /system/bin/dhcpcd eth0 -B
     disabled
