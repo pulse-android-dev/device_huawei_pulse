@@ -14,9 +14,12 @@ $ repo sync
 Extract necessary binaries
 -----------------------
 Some compiled code from the official eclair roms is re-used in froyo. Some of this code is not open-source and will not be included in the git repositories. 
-The files can be extracted from any eclair rom, but the official UK rom is recommended.
+The files can be extracted from any Pulse/U8220/U8230 eclair rom, but the official T-Mobile UK rom is recommended.
 
-Script not yet available. Will be added later...
+$ device/huawei/pulse/extract_zip.sh <zip_file>
+
+zip_file should be a signed zip update file (it doesn't matter if its not signed, but it should be of that format). eg. One of flibblesan's roms.
+I will add support later for pulling the files from a running phone or UPDATA.UPP.
 
 
 
@@ -34,7 +37,9 @@ After the environment is setup.
 
 $ cd mydroid
 $ source build/envsetup.sh
-$ choosecombo                         
+$ lunch
+
+Select the device you want to build for.                         
 
 $ make 
 
